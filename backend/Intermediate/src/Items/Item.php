@@ -4,19 +4,20 @@ namespace Dyflexis\Applicants\Items;
 
 abstract class Item
 {
-    public $name;
+    public string $name;
 
-    public $quality;
+    public int $quality;
 
-    public $sellIn;
+    public int $sellIn;
 
-    public function __construct($name, $quality, $sellIn) {
+    public function __construct($name, $quality, $sellIn)
+    {
         $this->name = $name;
         $this->quality = $quality;
         $this->sellIn = $sellIn;
     }
 
-    public function tick()
+    public function tick() : void
     {
         $this->updateQuality();
 
@@ -26,5 +27,5 @@ abstract class Item
             $this->updateQuality();
         }
     }
-    protected abstract function updateQuality();
+    protected abstract function updateQuality() : void;
 }
