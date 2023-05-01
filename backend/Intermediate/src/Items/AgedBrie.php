@@ -1,6 +1,6 @@
 <?php
 
-namespace Dyflexis\Applicants;
+namespace Dyflexis\Applicants\Items;
 
 class AgedBrie extends Item
 {

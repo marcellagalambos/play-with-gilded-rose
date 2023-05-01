@@ -2,6 +2,10 @@
 
 namespace Dyflexis\Applicants;
 
+use Dyflexis\Applicants\Items\AgedBrie;
+use Dyflexis\Applicants\Items\Bread;
+use Dyflexis\Applicants\Items\ManaDrink;
+
 class GildedRose
 {
     public static function of($name, $quality, $sellIn) {

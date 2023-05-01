@@ -3,7 +3,7 @@
 namespace Dyflexis\Applicants\Test;
 
 use Dyflexis\Applicants\GildedRose;
-use Dyflexis\Applicants\Item;
+use Dyflexis\Applicants\Items\Item;
 use PHPUnit\Framework\TestCase;
 
 class GildedRoseTest extends TestCase
