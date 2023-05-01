@@ -3,6 +3,7 @@
 namespace Dyflexis\Applicants\Test;
 
 use Dyflexis\Applicants\GildedRose;
+use Dyflexis\Applicants\Items\Item;
 use PHPUnit\Framework\TestCase;
 
 class GildedRoseTest extends TestCase
@@ -15,7 +16,7 @@ class GildedRoseTest extends TestCase
      * @dataProvider backstagePassItems
      * @dataProvider manaDrinkItems
      */
-    public function it_updates_the_item(GildedRose $item, int $expectedQuality, int $expectedSellIn): void
+    public function it_updates_the_item(Item $item, int $expectedQuality, int $expectedSellIn): void
     {
         $item->tick();
 
