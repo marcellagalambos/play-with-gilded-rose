@@ -1,0 +1,12 @@
+{
+    "name": "dyflexis/applicants",
+    "description": "Default code tests for applicants.",
+    "require": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dyflexis\\Applicants\\": "src/"
+        }
+    }
+}

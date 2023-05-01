@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  advanced:
+    build:
+      context: ./backend/Advanced
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ./backend/Advanced:/srv/backend
+    entrypoint: /srv/backend/docker/entrypoint.sh
+
+  intermediate:
+    build:
+      context: ./backend/Intermediate
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ./backend/Intermediate:/srv/backend
+    entrypoint: /srv/backend/docker/entrypoint.sh
