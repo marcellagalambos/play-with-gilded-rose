@@ -10,6 +10,21 @@ abstract class Item
 
     public $sellIn;
 
-    public abstract function tick();
+    public function __construct($name, $quality, $sellIn) {
+        $this->name = $name;
+        $this->quality = $quality;
+        $this->sellIn = $sellIn;
+    }
+
+    public function tick()
+    {
+        $this->updateQuality();
+
+        $this->sellIn--;
+
+        if ($this->sellIn < 0) {
+            $this->updateQuality();
+        }
+    }
     protected abstract function updateQuality();
 }
