@@ -2,7 +2,7 @@
 
 namespace Dyflexis\Applicants;
 
-class ManaDrinks extends Item
+class ManaDrink extends Item
 {
     public function __construct($quality, $sellIn) {
         $this->name = 'Mana Drink';

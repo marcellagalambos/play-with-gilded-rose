@@ -10,7 +10,7 @@ class GildedRose
         } else if ($name == 'Aged Brie') {
             return new AgedBrie($quality, $sellIn);
         } else if ($name == 'Mana Drink') {
-            return new ManaDrinks($quality, $sellIn);
+            return new ManaDrink($quality, $sellIn);
         }
     }
 }
